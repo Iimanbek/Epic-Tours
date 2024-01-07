@@ -1,12 +1,16 @@
-<script setup lang="ts">
-import {lazyLoadComponentIfVisible} from '../utils'
-
-</script>
+<script >
+import Main from '@/components/Main.vue'
+export default {
+  components:{
+    'v-main':Main
+  }
+}
+</script >
 
 <template>
   <Layout>
     <div>
-      <h1>hello world </h1>
+      <v-main/>
     </div>
   </Layout>
 </template>
